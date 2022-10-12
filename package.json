@@ -19,7 +19,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -32,7 +31,7 @@
     "trailingComma": "es5"
   },
   "name": "web3-toolkit",
-  "author": "袁俊亮",
+  "author": "yuanjunliang",
   "module": "dist/web3-toolkit.esm.js",
   "size-limit": [
     {
@@ -45,11 +44,16 @@
     }
   ],
   "devDependencies": {
+    "@ethersproject/providers": "^5.7.1",
     "@size-limit/preset-small-lib": "^8.1.0",
     "husky": "^8.0.1",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ethers": "^5.7.1",
+    "log4js": "^6.7.0"
   }
 }
